@@ -40,7 +40,7 @@ df = pd.read_csv('glaciers_csv.csv')
 #title of the page
 st.markdown("<h1 style='text-align: center; color: black;'>MELTING GLACIERS!</h1>", unsafe_allow_html=True)
 
-image = st.image('img.jpg',use_column_width=True,caption='Mountain Glacier Melting into the sea')
+image = st.image('glac.jpg',use_column_width=True,caption='Mountain Glacier Melting into the sea')
 #st.dataframe(df)
 
 dz = pd.read_csv('reducedloc.csv')
@@ -103,7 +103,7 @@ col4.image(kg,width=60)
 #options for the main body underneth the slider.
 
 if add_unit_options =='Burj Khalifa':
-    im = Image.open('burj.jpg')
+    im = Image.open('burj1.jpg')
     col1.write('Mass difference In units of Burj Khalifa ')#,
     col2.write(round(mass/453592370,2))
     col2.write(' ')
@@ -112,7 +112,7 @@ if add_unit_options =='Burj Khalifa':
     col3.write(' ')
     col4.image(im,width=60)
 if add_unit_options =='Pyrimid of Giza':
-    img = Image.open('pyrimid.jpg')
+    img = Image.open('pyr.jpg')
     col1.write('Mass difference In units of Pyrimid of Giza ')#,round(abs(glaciermass(df,value)[0]/5896700810),2))
     col2.write(round(mass/5896700810,2))
     col2.write(' ')
@@ -126,7 +126,7 @@ if add_unit_options =='Everest':
     col2.write(' ')
     col3.write('/100')
     col3.write(' ')
-    col4.image('everestcartton.jpg',width=150)
+    col4.image('baseever.jpg',width=150)
 
 
 if add_unitvol_option =='Olympic Swiming Pool':
