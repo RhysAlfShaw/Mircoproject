@@ -48,7 +48,7 @@ dz = pd.read_csv('reducedloc.csv')
 st.header('Where are glaciers around the world?')
 st.write('Below is a map of Northen hemisphere glaciers.')
 
-fig = px.scatter_mapbox(dz, lat="Lat", lon="Long", size="Area",size_max=30,color_discrete_map="#9932CC", zoom=1,center={'lat':50,'lon':0})
+fig = px.scatter_mapbox(dz, lat="Lat", lon="Long", size="Area",zoom=1,center={'lat':50,'lon':0})
 fig.update_layout(mapbox_style='white-bg', mapbox_layers=[
         {
             "below": 'traces',
