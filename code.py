@@ -129,14 +129,17 @@ if add_unit_options =='Everest':
 
 
 if add_unitvol_option =='Olympic Swiming Pool':
+    col4.image('olym.jpg',width=150)
     col1.write('Volume In Units of Olympic Swiming Pools')
     col2.write(round(volume/2500* 1/100000,2))
     col3.write('x100,000')
 if add_unitvol_option =='Lake Erie':
+    col4.image('eire.gif',width=150)
     col1.write('Volume In Units of Lake Erie (One of Americas great lakes)')
     col2.write(round((volume/480000000000 *1000),2))
     col3.write('/1,000')
 if add_unitvol_option =='Atlantic Ocean':
+    col4.image('atlantic.jpg',width=150)
     col1.write('Volume In Units of Atlantic Oceans')
     col2.write(round(volume/310410900000000000 *1000000000,2))
     col3.write(' /1,000,000,000')
