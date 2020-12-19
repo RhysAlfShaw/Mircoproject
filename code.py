@@ -31,7 +31,7 @@ decription = st.sidebar.write('MSc Microproject Infographic. By Rhys Shaw and Ke
 add_description = st.sidebar.write(
     '\n In this infographic we can see how the total mass of Earths glaciers has changed scince 1945.\n \n Below, you can change the units for Mass and Volume relative to more familiar landmarks.')
 
-add_unit_options = st.sidebar.radio('Mass Units',('Burj Khalifa','Pyrimid of Giza','Everest'))
+add_unit_options = st.sidebar.radio('Mass Units',('Burj Khalifa','Pyramid of Giza','Everest'))
 
 add_unitvol_option = st.sidebar.radio('Volume Unit',('Olympic Swiming Pool','Lake Erie','Atlantic Ocean'))
 
@@ -112,7 +112,7 @@ if add_unit_options =='Burj Khalifa':
     col4.image(im,width=60)
 if add_unit_options =='Pyrimid of Giza':
     img = Image.open('pyr.jpg')
-    col1.write('Mass difference In units of Pyrimid of Giza ')#,round(abs(glaciermass(df,value)[0]/5896700810),2))
+    col1.write('Mass difference In units of Pyramid of Giza ')#,round(abs(glaciermass(df,value)[0]/5896700810),2))
     col2.write(round(mass/5896700810,2))
     col2.write(' ')
     col3.write(' ')
