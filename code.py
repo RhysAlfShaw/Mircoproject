@@ -139,7 +139,7 @@ if add_unitvol_option =='Lake Erie':
     col2.write(round((volume/480000000000 *1000),2))
     col3.write('/1,000')
 if add_unitvol_option =='Atlantic Ocean':
-    col4.image('atlantic.jpg',width=150)
+    col4.image('atlantic.jpeg',width=150)
     col1.write('Volume In Units of Atlantic Oceans')
     col2.write(round(volume/310410900000000000 *1000000000,2))
     col3.write(' /1,000,000,000')
